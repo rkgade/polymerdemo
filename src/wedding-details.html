@@ -1,0 +1,95 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-grid/iron-grid.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="wedding-details">
+
+    <template>
+
+        <style include="shared-styles"></style>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+
+        <h2>IDP</h2>
+        <div class="card">
+            <iron-grid>
+                <div class="xs12 s6 m6 l6 xl6">
+                    <img class="center" src="../images/couple.jpg" style="max-height: 250px;"/>
+                </div>
+                <div class="xs12 s6 m6 l6 xl6">
+                    <div style="padding: 10px 0;">
+                        <div>Components can be listed here. </div>
+                        <h3 style="text-align: center;"><br/>
+                            highlights can come here                            
+                        </h3>
+                    </div>
+                </div>
+            </iron-grid>
+        </div>
+
+        <h2>Platform Introduction</h2>
+        <div class="card">
+            <iron-grid>
+                <div class="xs12 s6 m6 l6 xl6">
+                    <p style="text-align: left">
+			Introduction can come here.
+                    </p>
+                    <p style="text-align: center">
+                        <strong>Saturday, November 26, 2016</strong><br/>
+                    </p>
+                    <p style="text-align: center">
+                        <strong>Headings</strong><br/>
+                      </p>
+                    <ul>
+                        <li>list point 1</li>
+                        <li>list point 2</li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/Bakery+105/@34.2328605,-77.9506265,17z/data=!3m1!4b1!4m5!3m4!1s0x89aa1fc87f2070c1:0x1178fa84a314f8c6!8m2!3d34.2328605!4d-77.9484378"
+                               target="_blank">Google Map</a></li>
+                    </ul>
+                </div>
+                <div class="xs12 s6 m6 l6 xl6">
+                    <img class="center" src="../images/venue.jpg" style="max-height: 250px;"/>
+                </div>
+            </iron-grid>
+        </div>
+
+        <h2>Resources</h2>
+        <div class="card">
+            <iron-grid>
+                <div class="xs12 s6 m6 l6 xl6">
+                    <img class="center" src="../images/hotel.jpg" style="max-height: 250px;"/>
+                </div>
+                <div class="xs12 s6 m6 l6 xl6">
+                    <p style="text-align: center">
+                    </p>
+                </div>
+            </iron-grid>
+        </div>
+
+    </template>
+
+    <script>
+
+        Polymer({
+
+            is: 'wedding-details'
+
+        });
+
+    </script>
+
+</dom-module>

@@ -1,0 +1,59 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-grid/iron-grid.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="wedding-registry-item.html">
+
+<dom-module id="wedding-registry">
+
+    <template>
+
+        <style include="shared-styles"></style>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+
+        <h1>Credits</h1>
+
+        <iron-grid>
+            <div class="xs12 s6 m6 l6 xl6">
+                <wedding-registry-item name="Infosys" img-src="../images/registry/bed-bath-beyond.png"
+                                       href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=543553733&eventType=Wedding&pwsurl=?mcid=EM_triggeredem_emailregistryplural__allpromos"></wedding-registry-item>
+            </div>
+            <div class="xs12 s6 m6 l6 xl6">
+                <wedding-registry-item name="Tools Group" img-src="../images/registry/williams-sonoma.png"
+                                       href="https://secure.williams-sonoma.com/registry/ktf6qvmp2c/registry-list.html?bnrid=3101172&cm_ite=hero_cta"></wedding-registry-item>
+            </div>
+        </iron-grid>
+
+        <iron-grid>
+            <div class="xs12 s6 m6 l6 xl6">
+                <wedding-registry-item name="Others" img-src="../images/registry/amazon.png"
+                                       href="https://www.amazon.com/wedding/maggie-sullivan-caleb-lloyd-wilmington-november-2016/registry/2MYCUIHVYN8RK"></wedding-registry-item>
+            </div>
+            <div class="xs12 s6 m6 l6 xl6">
+                <wedding-registry-item name="Others" img-src="../images/registry/target.png"
+                                       href="https://www-secure.target.com/gift-registry/giftgiver?registryId=YR0c65SehsD_kPnyCh0oBg&lnk=copiedLink"></wedding-registry-item>
+            </div>
+        </iron-grid>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'wedding-registry'
+        });
+    </script>
+
+</dom-module>
